@@ -37,7 +37,7 @@ fn main ()  {
             Ok(n) => n,                                        //
             Err(_) => {                                             //  Esse codigo funciona bem, só
                 print!("Entrada invalida, tente novamente\n\n");    //  testando outras possibilidades.
-                continue;                                                    //
+                continue;                                           //
             }                                                       //
         };
         
@@ -64,8 +64,8 @@ fn main ()  {
 
         // Essa função "Mach" faz uma comparação com maior variedade de opções, parece o switch case do java
         match it_palpite.cmp(&numero_escolhido){
-            Ordering::Less => print!("Muito Baixo\n"),
-            Ordering::Greater => print!("Muito Alto\n"),
+            Ordering::Less => print!("Muito Baixo\n\n"),
+            Ordering::Greater => print!("Muito Alto\n\n"),
             Ordering::Equal => {
                 print!("Você acertou, parabens!\n");
                 //Não gosto de usar o break, pode dar problema em codigos mais complexos, porem bora ver o que essa linguagem nos reserva...
